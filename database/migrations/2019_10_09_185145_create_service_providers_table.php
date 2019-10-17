@@ -20,6 +20,7 @@ class CreateServiceProvidersTable extends Migration
             $table->string('description', 2000);
             $table->string('image');
             $table->integer('estate_id')->unsigned();
+            $table->integer('category_id')->unsigned();
             $table->timestamps();
         });
     }
